@@ -1,7 +1,7 @@
 function findAllPermutations(string){
   solution = []
   array = string.split('')
-  
+
   for (let letter of array){
     array = array.filter(el => el !== letter)
     let index = 0
