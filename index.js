@@ -1,6 +1,9 @@
 function findAllPermutations(string){
   let solution = []
   let array = string.split('')
+  if (array.length === 1){
+    return array.join('')
+  }
 
   for (let letter of array){
     array = array.filter(el => el !== letter)
